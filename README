@@ -1,0 +1,32 @@
+
+Plotting stuff
+==============
+
+Dependencies
+------------
+
+- R
+	- Package named 'r' on Arch.
+- ggplot2 
+	- Run 'R'.
+	- Run 'install.packages("ggplot2")'
+	- Follow the druid.
+
+Running
+-------
+
+./pso.py
+
+	Generates 'sf6.csv' 'f6_mins.csv', and 'poly.csv'.
+
+./plot_sf6.r f_name
+./plot_poly.r f_name
+
+	Take f_name, and generate f_name.pdf
+
+Datasets
+--------
+
+sf6.csv.good
+	
+	A run of sf6 that actually finds the minimum.
