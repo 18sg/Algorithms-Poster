@@ -2,12 +2,8 @@
 library(ggplot2)
 
 argv <- commandArgs(trailingOnly = T)
+f_name <- if (length(argv) == 1) argv[1] else "sf6.csv"
 
-if (length(argv) == 1) {
-	f_name <- argv[1]
-} else {
-	f_name <- "sf6.csv"
-}
 
 d  <- read.csv(f_name)
 mins <- read.csv("f6_mins.csv")

@@ -2,12 +2,7 @@
 library(ggplot2)
 
 argv <- commandArgs(trailingOnly = T)
-
-if (length(argv) == 1) {
-	f_name <- argv[1]
-} else {
-	f_name <- "poly.csv"
-}
+f_name <- if (length(argv) == 1) argv[1] else "poly.csv"
 
 d  <- read.csv(f_name)
 
